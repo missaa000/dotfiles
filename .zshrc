@@ -1,5 +1,5 @@
 #( ˘ω˘)ｽﾔｧ
-
+#Ubuntu 16.04
 ###########################################
 
 #環境変数
@@ -33,5 +33,4 @@ setopt ignore_eof
 setopt rm_star_wait
 
 #エラーに色をつける
-zmodload zsh/terminfo zsh/system
-exec 2> >(sed --unbuffered "s/^/${fg_bold[magenta]}/;s/$/${terminfo[sgr0]}/")
+exec 2> >(sed --unbuffered "s/^/${fg_bold[magenta]}/;s/$/${reset_color}/")
