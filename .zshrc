@@ -41,7 +41,7 @@ setopt ignore_eof
 setopt rm_star_wait
 
 #エラーに色をつける
-#exec 2> >(sed --unbuffered "s/^/${fg_bold[red]}/;s/$/${reset_color}/")
+exec 2> >(sed "s/^/${fg_bold[red]}/;s/$/${terminfo[sgr0]}/")
 
 #add anaconda PATH
 export PATH="$PATH:/anaconda3/bin"
