@@ -21,7 +21,7 @@ alias vim="vim -c start"
 
 #プロンプト
 #PROMPT="${fg[cyan]}[%n]${fg[black]}%(!.#.$) "
-PROMPT="${fg[cyan]}[missaa]${fg[black]}%(!.#.$) "
+PROMPT="${fg[cyan]}[missaa]${reset_color}%(!.#.$) "
 RPROMPT="[%~]"
 setopt transient_rprompt
 
